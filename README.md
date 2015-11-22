@@ -25,7 +25,7 @@ Back in 2012, a user named fehhh [wrote a script](http://ugetdm.com/forum/viewto
 	* ISOs
 	* Images
 
-2. Download the uget_preprocessor.sh script.  
+2. Download the [uget_preprocessor.sh](https://raw.githubusercontent.com/uriel1998/uget_autosorter/master/uget_preprocessor.sh) script.  
 3. Give the script executable permissions: ```chmod a+x uget_preprocessor.sh```  
 4. Make sure you don't actually have KGet installed at this point.   
 5. ```sudo cp uget_preprocessor.sh /usr/bin/kget```  
