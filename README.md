@@ -52,13 +52,10 @@ Wait! You use Windows? Guess what! You're in luck too! uGet is a portable packag
 	* Torrents
 	* ISOs
 	* Images
-3. Download the [uget_preprocessor.cmd](https://raw.githubusercontent.com/uriel1998/uget_autosorter/master/uget_preprocessor.sh) script.  
-
-
- - just download the zip file and extract the zip file (C:\uGet is what I use in the example)
-
-http://gnuwin32.sourceforge.net/packages/wget.htm
-http://gnuwin32.sourceforge.net/packages/grep.htm
-Run the installer
-C:\Progra~1\GnuWin32\bin\wget.exe
-
+3. Get and install the **setup** packages of [Win32 WGet](http://gnuwin32.sourceforge.net/packages/wget.htm) and [Win32 Grep](http://gnuwin32.sourceforge.net/packages/grep.htm). 
+4. Download the [uget_preprocessor.cmd](https://raw.githubusercontent.com/uriel1998/uget_autosorter/master/uget_preprocessor.cmd) script.  
+5. Copy **uget_preprocessor.cmd** to **C:\uGet**
+6. Set FlashGot (or whatever other application) to use C:\uGet\uget_preprocessor.cmd as the download processor
+![Setting Up FlashGot](win_preprocessor.png?raw=true "Setting up FlashGot")
+7. If there's an option for commandline options, use ```[URL] --filename=[FNAME]```
+8. Profit!  
