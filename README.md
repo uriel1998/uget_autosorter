@@ -1,6 +1,8 @@
 # uget_autosorter
-Making uGet sort downloads into categories automagically... and work in instances where only KGet is an option.
+Making uGet sort downloads into categories automagically for both Linux and Windows... and work in instances where only KGet is an option.
 
+
+#What This Solves
 
 I tried out [uGet](http://ugetdm.com/) and quickly realized it was **far** more lightweight than what I'd been using, had categories like I wanted, and could integrate easily with Firefox/Iceweasel using [FlashGot](https://flashgot.net/). The problem was that certain apps I use - in particular [Liferea](https://lzone.de/liferea/) - do not support uGet. But they *do* support [KGet](https://www.kde.org/applications/internet/kget/). While KGet was good, it just felt ... bloated. And uGet feels light, snappy, and quick.
 
@@ -41,7 +43,7 @@ Please note that all the coding credit goes to [fehhh](http://ugetdm.com/forum/m
 
 Wait! You use Windows? Guess what! You're in luck too! uGet is a portable package for Windows, so you can use it as well. The only difference is that there's two basic tools that you'll need to snag, both free and open source. (Please note that if you deviate from these instructions, you'll have to change the script; some file paths are hardcoded in the beginning.)
 
-1. Get uGet and unzip the portable archive into **C:\uGet**. 
+1. Get uGet and unzip the portable archive into ```C:\uGet```
 2. Set up uGet with the following categories **in this order** (though the names don't matter)
 	* Home
 	* Archives
@@ -54,7 +56,7 @@ Wait! You use Windows? Guess what! You're in luck too! uGet is a portable packag
 	* Images
 3. Get and install the **setup** packages of [Win32 WGet](http://gnuwin32.sourceforge.net/packages/wget.htm) and [Win32 Grep](http://gnuwin32.sourceforge.net/packages/grep.htm). 
 4. Download the [uget_preprocessor.cmd](https://raw.githubusercontent.com/uriel1998/uget_autosorter/master/uget_preprocessor.cmd) script.  
-5. Copy **uget_preprocessor.cmd** to **C:\uGet**
+5. Copy ```uget_preprocessor.cmd``` to ```C:\uGet```
 6. Set FlashGot (or whatever other application) to use C:\uGet\uget_preprocessor.cmd as the download processor
 ![Setting Up FlashGot](win_preprocessor.png?raw=true "Setting up FlashGot")
 7. If there's an option for commandline options, use ```[URL] --filename=[FNAME]```
