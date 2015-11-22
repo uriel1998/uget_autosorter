@@ -1,0 +1,172 @@
+# scratch file of mimetypes
+
+:text/css
+:text/csv
+:text/html
+:text/javascript
+:text/plain
+:text/xml
+:video/mpeg
+:video/mp4
+:video/ogg
+:video/quicktime
+:video/x-ms-wmv
+:application/x-pkcs12
+:application/x-pkcs12
+:application/x-pkcs7-certificates
+:application/x-pkcs7-certificates
+:application/x-pkcs7-certreqresp
+:application/x-pkcs7-mime
+:application/x-pkcs7-mime
+:application/x-pkcs7-signature
+:multipart/mixed
+:multipart/alternative
+:multipart/related
+:multipart/form-data
+:multipart/signed
+:multipart/encrypted
+:application/x-www-form-urlencoded
+:application/EDI-X12
+:application/EDIFACT
+:application/javascript
+:application/octet-stream
+:application/ogg
+:application/pdf
+:application/xhtml+xml
+:application/xml-dtd
+:application/json
+:application/zip
+:image/gif
+:image/jpeg
+:image/png
+:image/svg+xml
+:image/tiff
+:image/vnd.microsoft.icon
+:application/vnd.oasis.opendocument.text
+:application/vnd.oasis.opendocument.spreadsheet
+:application/vnd.oasis.opendocument.presentation
+:application/vnd.oasis.opendocument.graphics
+:application/vnd.ms-excel
+:application/vnd.ms-powerpoint
+:application/msword
+:application/vnd.mozilla.xul+xml
+:audio/basic
+:audio/mpeg
+:audio/ogg
+:audio/vorbis
+:audio/x-ms-wma
+:audio/vnd.rn-realaudio
+:audio/x-wav
+
+.arj 	application/arj
+.avi 	application/x-troff-msvideo
+.avi 	video/avi
+.avi 	video/msvideo
+.avi 	video/x-msvideo
+.bmp 	image/bmp
+.bmp 	image/x-windows-bmp
+
+.bz 	application/x-bzip
+.bz2 	application/x-bzip2
+
+.css 	text/css
+.doc 	application/msword
+.dot 	application/msword
+
+.gif 	image/gif
+
+.gtar 	application/x-gtar
+.gz 	application/x-compressed
+.gz 	application/x-gzip
+.gzip 	application/x-gzip
+.gzip 	multipart/x-gzip
+
+.ico 	image/x-icon
+.jfif 	image/jpeg
+
+.lha 	application/lha
+.lha 	application/x-lha
+
+.m1v 	video/mpeg
+.m3u 	audio/x-mpequrl
+.mid 	application/x-midi
+.mid 	audio/midi
+.mid 	audio/x-mid
+.mid 	music/crescendo
+.mid 	x-music/x-midi
+.midi 	application/x-midi
+.midi 	audio/x-mid
+
+.moov 	video/quicktime
+.mov 	video/quicktime
+.movie 	video/x-sgi-movie
+
+.mp2 	audio/mpeg
+.mp2 	audio/x-mpeg
+
+.mp3 	audio/mpeg3
+.mp3 	audio/x-mpeg-3
+
+.mp3 	video/mpeg
+.mp3 	video/x-mpeg
+
+.mpp 	application/vnd.ms-project
+.pbm 	image/x-portable-bitmap
+.pdf 	application/pdf
+
+.png 	image/png
+
+.ppa 	application/vnd.ms-powerpoint
+.pps 	application/mspowerpoint
+.ppt 	application/powerpoint
+.ppt 	application/x-mspowerpoint
+
+.rtf 	application/rtf
+.rtf 	application/x-rtf
+.rtf 	text/richtext
+
+.s3m 	audio/s3m
+
+.tar 	application/x-tar
+
+.tex 	application/x-tex
+.texi 	application/x-texinfo
+.texinfo 	application/x-texinfo
+.tgz 	application/gnutar
+.tgz 	application/x-compressed
+
+.tif 	image/tiff
+.tiff 	image/x-tiff
+
+.tsv 	text/tab-separated-values
+.txt 	text/plain
+
+.w60 	application/wordperfect6.0
+.w61 	application/wordperfect6.1
+.w6w 	application/msword
+
+.wav 	audio/wav
+.wav 	audio/x-wav
+
+.word 	application/msword
+.wp6 	application/wordperfect
+.wpd 	application/x-wpwin
+.wq1 	application/x-lotus
+.wri 	application/mswrite
+.wri 	application/x-wri
+
+.xl 	application/excel
+.xla 	application/x-excel
+.xla 	application/x-msexcel
+.xlb 	application/vnd.ms-excel
+
+.xm 	audio/xm
+.xml 	application/xml
+.xml 	text/xml
+
+.x-png 	image/png
+.z 	application/x-compress
+.z 	application/x-compressed
+.zip 	application/x-compressed
+.zip 	application/x-zip-compressed
+.zip 	application/zip

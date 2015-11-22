@@ -34,3 +34,12 @@ Back in 2012, a user named fehhh [wrote a script](http://ugetdm.com/forum/viewto
 8. Profit!  
 
 Please note that all the coding credit goes to [fehhh](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=62) and [Michael Tunnell](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=2) - I just figured out this hack and wrote up how to do it.
+
+Wait! You use Windows? Guess what! You're in luck too! uGet is a portable package for Windows - just download the zip file and 
+extract the zip file (C:\uGet is what I use in the example)
+
+http://gnuwin32.sourceforge.net/packages/wget.htm
+http://gnuwin32.sourceforge.net/packages/grep.htm
+Run the installer
+C:\Progra~1\GnuWin32\bin\wget.exe
+
