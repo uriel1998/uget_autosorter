@@ -1,6 +1,7 @@
 # uget_autosorter
 Making uGet sort downloads into categories automagically for both Linux and Windows... and work in instances where only KGet is an option.
 
+Jump to the [Linux instructions](https://github.com/uriel1998/uget_autosorter#linux-instructions) or the [Windows Instructions](https://github.com/uriel1998/uget_autosorter#windows-instructions)
 
 #What This Solves
 
