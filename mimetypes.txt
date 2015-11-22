@@ -1,5 +1,22 @@
 # scratch file of mimetypes
 
+EPUB
+KINDLE
+LOOK AT ICEWEASEL FOR STUFF
+:application/epub+zip
+:application/vnd.amazon.ebook
+:application/x-mobipocket-ebook
+application/a-gzip
+application/x-gunzip
+image/x-icon
+a
+
+azw
+prc
+epub
+mobi
+
+
 :text/css
 :text/csv
 :text/html
