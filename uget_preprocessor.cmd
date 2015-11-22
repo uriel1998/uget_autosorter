@@ -20,7 +20,7 @@ REM Please remember that uGet must be installed properly!
 REM Specify the path to java.exe on the line below.
 set UGETEXE=c:\uGet\bin\uget.exe
 REM
-REM 
+REM
 REM Revision history
 REM 20121115_2115: uriel1998: Original code
 
@@ -74,7 +74,7 @@ REM #########################################################################
 FOR /F "tokens=* USEBACKQ" %%F IN (`%GREPEXE% -i -m2 -e "^Length:" %temp%\wgettemp.txt `) DO (
 SET var=%%F
 )
-for /f "tokens=4" %%G IN ("%var%") DO SET tail=%%G 
+for /f "tokens=4" %%G IN ("%var%") DO SET tail=%%G
 SET tail=%tail:*[=%
 SET mimetype=%tail:]=%
 SET submimetype=%mimetype:*/=%
@@ -192,8 +192,9 @@ goto end
 REM ############################ PACKAGES
 :packages
 :application/x.debian.package
-:application/x-redhat-package-manager 
+:application/x-redhat-package-manager
 :application/x-rpm
+:application/x-msi
 start %UGETEXE% %2 %1 --category-index=5
 goto end
 
@@ -229,14 +230,14 @@ REM # Please feel free to add whatever extensions you want to the filetype strin
 REM #########################################################################
 
 :nameprocessing
-SET archivefiletype="7z,zip,tar,gz,rar,arj"
-SET documentfiletype="doc,docx,xls,xlsx,odt,odf,css,html,rtf,csv,tsv,pdf"
-SET moviefiletype="avi,mov,m4v,mpg,mpeg"
-SET musicfiletype="mp3,midi,mod,s3m,wav,ogg,m3u,pls"
-SET packagefiletype="deb,rpm,yum,msi"
+SET archivefiletype="7z,zip,tar,gz,rar,arj,bz2,tgz"
+SET documentfiletype="doc,docx,xls,xlsx,odt,odf,css,html,djvu,rtf,csv,tsv,pdf"
+SET moviefiletype="avi,mov,m4v,mpg,mpeg,flv,mkv,wmv,mp4"
+SET musicfiletype="mp3,midi,mod,s3m,wav,ogg,m3u,pls,flac,ape,m4a"
+SET packagefiletype="apk,pup,pet,ebuild,appx,appxbundle,deb,rpm,yum,msi"
 SET torrentfiletype="torrent,magnet"
-SET isofiletype="iso,cue,"
-SET imagefiletype="ico,tif,png,jpg,jpeg,bmp,svg,gif"
+SET isofiletype="iso,cue,img"
+SET imagefiletype="gif,jpg,jpeg,svg,png,tiff,tif,ico,pbm,pcx"
 
 if not "x!archivefiletype:%fileext%=!"=="x%archivefiletype%"  goto archives
 if not "x!documentfiletype:%fileext%=!"=="x%documentfiletype%"  goto documents
