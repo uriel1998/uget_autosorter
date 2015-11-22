@@ -38,7 +38,6 @@ Back in 2012, a user named [fehhh](http://ugetdm.com/forum/memberlist.php?mode=v
 7. If there's an option for commandline options, use ```[URL] --filename=[FNAME]```
 8. Profit!  
 
-Please note that all the coding credit goes to  - I just figured out this hack and wrote up how to do it.
 
 #Windows Instructions
 
