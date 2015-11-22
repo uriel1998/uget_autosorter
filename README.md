@@ -9,13 +9,13 @@ I tried out [uGet](http://ugetdm.com/) and quickly realized it was **far** more 
 
 The one feature that KGet does natively that uGet does not is *automatically* sort downloads into categories. You can *specify* what categories to use, but it won't automatically detect them.
 
-Dammit, this is linux. I'm supposed to be able to do whatever I want. 
+Dammit, this is linux. I'm supposed to be able to do whatever I want.
 
 So I did.
 
 And it turns out the solution to both was the same script file.
 
-Back in 2012, a user named fehhh [wrote a script](http://ugetdm.com/forum/viewtopic.php?f=11&t=6) that you could call first. It relies on [wget](https://www.gnu.org/software/wget/) to determine what kind of file you're downloading. I added a few small - but crucial - tweaks to make this all work.
+Back in 2012, a user named [fehhh](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=62) [wrote a script](http://ugetdm.com/forum/viewtopic.php?f=11&t=6) that you could call first. It was later edited by [Michael Tunnell](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=2). It relies on [wget](https://www.gnu.org/software/wget/) to determine what kind of file you're downloading. I originally added a few tweaks, then rewrote it and also created a Windows version.
 
 #Linux Instructions
 
@@ -38,7 +38,7 @@ Back in 2012, a user named fehhh [wrote a script](http://ugetdm.com/forum/viewto
 7. If there's an option for commandline options, use ```[URL] --filename=[FNAME]```
 8. Profit!  
 
-Please note that all the coding credit goes to [fehhh](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=62) and [Michael Tunnell](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=2) - I just figured out this hack and wrote up how to do it.
+Please note that all the coding credit goes to  - I just figured out this hack and wrote up how to do it.
 
 #Windows Instructions
 
@@ -55,7 +55,7 @@ Wait! You use Windows? Guess what! You're in luck too! uGet is a portable packag
 	* Torrents
 	* ISOs
 	* Images
-3. Get and install the **setup** packages of [Win32 WGet](http://gnuwin32.sourceforge.net/packages/wget.htm) and [Win32 Grep](http://gnuwin32.sourceforge.net/packages/grep.htm). 
+3. Get and install the **setup** packages of [Win32 WGet](http://gnuwin32.sourceforge.net/packages/wget.htm) and [Win32 Grep](http://gnuwin32.sourceforge.net/packages/grep.htm).
 4. Download the [uget_preprocessor.cmd](https://raw.githubusercontent.com/uriel1998/uget_autosorter/master/uget_preprocessor.cmd) script.  
 5. Copy ```uget_preprocessor.cmd``` to ```C:\uGet```
 6. Set FlashGot (or whatever other application) to use C:\uGet\uget_preprocessor.cmd as the download processor
