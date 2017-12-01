@@ -3,7 +3,7 @@ Making uGet sort downloads into categories automagically for both Linux and Wind
 
 Jump to the [Linux instructions](https://github.com/uriel1998/uget_autosorter#linux-instructions) or the [Windows Instructions](https://github.com/uriel1998/uget_autosorter#windows-instructions)
 
-#What This Solves
+# What This Solves
 
 I tried out [uGet](http://ugetdm.com/) and quickly realized it was **far** more lightweight than what I'd been using, had categories like I wanted, and could integrate easily with Firefox/Iceweasel using [FlashGot](https://flashgot.net/). The problem was that certain apps I use - in particular [Liferea](https://lzone.de/liferea/) - do not support uGet. But they *do* support [KGet](https://www.kde.org/applications/internet/kget/). While KGet was good, it just felt ... bloated. And uGet feels light, snappy, and quick.
 
@@ -21,7 +21,7 @@ Now uGet has some category matching (yay!) but Firefox Quantum has broken everyt
 
 I've also added a "nobt" variant that will launch Transmission instead of uGet for torrents.  You can easily make this simply go to /dev/null if you like.
 
-#Linux Instructions
+# Linux Instructions
 
 1. Set up uGet with the following categories **in this order** (though the names don't matter)
 	* Home
