@@ -17,7 +17,7 @@ And it turns out the solution to both was the same script file.
 
 Back in 2012, a user named [fehhh](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=62) [wrote a script](http://ugetdm.com/forum/viewtopic.php?f=11&t=6) that you could call first. It was later edited by [Michael Tunnell](http://ugetdm.com/forum/memberlist.php?mode=viewprofile&u=2). It relies on [wget](https://www.gnu.org/software/wget/) to determine what kind of file you're downloading. I originally added a few tweaks, then rewrote it and also created a Windows version.
 
-Now uGet has some category matching (yay!) but Firefox Quantum has broken everything (boo!), so I resurrected this to work with an extension that seems to make things work pretty well.
+Now uGet has some category matching (yay!) but Firefox Quantum has broken everything (boo!), so I resurrected this to work with an extension that seems to make things work pretty well.  It works in *conjunction* with the uGet autosorting, and seems to provide a slightly greater robustness and error-checking.
 
 #Linux Instructions
 
