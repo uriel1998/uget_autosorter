@@ -13,8 +13,8 @@ SUGGESTEDFN=""
 
 function call_uget {
 
-    if [ "$CATEGORY" == "--category-index=6" ];then
-        /usr/bin/transmission-gtk "$URL"
+    if [ "$CATEGORY" == "--category-index=6" ]; then
+        /usr/bin/transmission-gtk "$URL" &
     else
         uget-gtk "$REFERER" "$COOKIES" "$FILENAME" "$URL" "$CATEGORY"
     fi
