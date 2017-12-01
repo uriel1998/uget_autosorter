@@ -19,6 +19,8 @@ Back in 2012, a user named [fehhh](http://ugetdm.com/forum/memberlist.php?mode=v
 
 Now uGet has some category matching (yay!) but Firefox Quantum has broken everything (boo!), so I resurrected this to work with an extension that seems to make things work pretty well.  It works in *conjunction* with the uGet autosorting, and seems to provide a slightly greater robustness and error-checking.
 
+I've also added a "nobt" variant that will launch Transmission instead of uGet for torrents.  You can easily make this simply go to /dev/null if you like.
+
 #Linux Instructions
 
 1. Set up uGet with the following categories **in this order** (though the names don't matter)
