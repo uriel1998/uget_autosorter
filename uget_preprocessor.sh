@@ -13,7 +13,7 @@ SUGGESTEDFN=""
 
 function call_uget {
 
-    uget-gtk "$REFERER" "$COOKIES" "$FILENAME" "$URL" "$CATEGORY"
+    uget-gtk "$REFERER" "$FILENAME" "$URL" "$CATEGORY"
 }
 
 # Used when application/octet-stream or just major mimetype of application that
@@ -125,7 +125,7 @@ function main_match {
 HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
 
 
-while getopts "u:f:r:c:h" opt; do
+while getopts "u:f:r:h" opt; do
     case $opt in
         u)  URL=$(echo "$OPTARG")
             ;;
@@ -133,9 +133,9 @@ while getopts "u:f:r:c:h" opt; do
             SUGGESTEDFN=${tempfilename#${HOMEDIR}}
             FILENAME=$(echo "--filename=$SUGGESTEDFN")
             ;;
-        r)  REFERER=$(echo "--http-referer=$OPTARG")
-            ;;
-        c)  COOKIES=$(echo "--http-cookie-file=$OPTARG")
+        r)  if [ -n "$OPTARG" ];then
+                REFERER=$(echo "--http-referer=$OPTARG")
+            fi
             ;;
         h)  show_help
             exit
@@ -144,6 +144,8 @@ while getopts "u:f:r:c:h" opt; do
 done
 
 #for backwards compatibility
+
+echo "$@" > /home/steven/1.1
 
 if [ -z "$URL" ];then
     URL="$1"

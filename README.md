@@ -44,7 +44,10 @@ The "Home" category should point to your "main" download directory.
 * -u URL: The url to download
 * -f FILENAME: The suggested filename
 * -r REFERRER: Referrer link
-* -c COOKIEFILE: Cookies
+
+For example, for [Download with Wget](https://addons.mozilla.org/en-US/firefox/addon/download-with-gnu-wget/), set the Executable to the path for this script, and the arguments to:
+
+-u "[URL]" -f "[FILENAME]"  -r "[REFERRER]"
 
 If no options are specified, the first parameter is assumed to be the URL to download.
 

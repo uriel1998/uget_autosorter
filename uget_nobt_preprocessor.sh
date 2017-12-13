@@ -14,9 +14,9 @@ SUGGESTEDFN=""
 function call_uget {
 
     if [ "$CATEGORY" == "--category-index=6" ]; then
-        /usr/bin/transmission-gtk "$URL" &
+        /usr/bin/transmission-gtk "$URL" 
     else
-        uget-gtk "$REFERER" "$COOKIES" "$FILENAME" "$URL" "$CATEGORY"
+        uget-gtk "$REFERER" "$FILENAME" "$URL" "$CATEGORY"
     fi
 }
 
@@ -49,7 +49,7 @@ function match_ext() {
 
 function show_help {
 
-echo -e "\n -u [URL] -f [FILENAME] -r [REFERRER] -c [COOKIEFILE] \n\n" \
+echo -e "\n -u [URL] -f [FILENAME] -r [REFERRER] \n\n" \
     "See the README about setting up categories in uGet \n"\
     "Designed to be used with the Download with WGet extension \n"\   
     "Category sorting complements that of what is built into uGet now. \n"\ 
@@ -129,7 +129,7 @@ function main_match {
 HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
 
 
-while getopts "u:f:r:c:h" opt; do
+while getopts "u:f:r:h" opt; do
     case $opt in
         u)  URL=$(echo "$OPTARG")
             ;;
@@ -137,9 +137,9 @@ while getopts "u:f:r:c:h" opt; do
             SUGGESTEDFN=${tempfilename#${HOMEDIR}}
             FILENAME=$(echo "--filename=$SUGGESTEDFN")
             ;;
-        r)  REFERER=$(echo "--http-referer=$OPTARG")
-            ;;
-        c)  COOKIES=$(echo "--http-cookie-file=$OPTARG")
+        r)  if [ -n "$OPTARG" ];then
+                REFERER=$(echo "--http-referer=$OPTARG")
+            fi
             ;;
         h)  show_help
             exit
