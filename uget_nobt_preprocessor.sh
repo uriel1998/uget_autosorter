@@ -14,9 +14,9 @@ SUGGESTEDFN=""
 function call_uget {
 
     if [ "$CATEGORY" == "--category-index=6" ]; then
-        /usr/bin/transmission-gtk "$URL" 
+        /usr/bin/transmission-gtk "$URL" &
     else
-        uget-gtk "$REFERER" "$FILENAME" "$URL" "$CATEGORY"
+        uget-gtk "$REFERER" "$FILENAME" "$URL" "$CATEGORY" &
     fi
 }
 
@@ -126,7 +126,7 @@ function main_match {
 
 
 # The base uGet category is considered the "Home" category and used to determine the default d/l location for stripping off that path.
-HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
+HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" -m 1 | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
 
 
 while getopts "u:f:r:h" opt; do
@@ -136,6 +136,8 @@ while getopts "u:f:r:h" opt; do
         f)  tempfilename=$(echo "$OPTARG")
             SUGGESTEDFN=${tempfilename#${HOMEDIR}}
             FILENAME=$(echo "--filename=$SUGGESTEDFN")
+            echo "$HOMEDIR" >> /home/steven/1.1
+            echo "$OPTARG | $SUGGESTEDFN | $FILENAME" >> /home/steven/1.1
             ;;
         r)  if [ -n "$OPTARG" ];then
                 REFERER=$(echo "--http-referer=$OPTARG")

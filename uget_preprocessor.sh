@@ -45,7 +45,7 @@ function match_ext() {
 
 function show_help {
 
-echo -e "\n -u [URL] -f [FILENAME] -r [REFERRER] -c [COOKIEFILE] \n\n" \
+echo -e "\n -u [URL] -f [FILENAME] -r [REFERRER] \n\n" \
     "See the README about setting up categories in uGet \n"\
     "Designed to be used with the Download with WGet extension \n"\   
     "Category sorting complements that of what is built into uGet now. \n"\ 
@@ -122,7 +122,7 @@ function main_match {
 
 
 # The base uGet category is considered the "Home" category and used to determine the default d/l location for stripping off that path.
-HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
+HOMEDIR=$(grep $HOME/.config/uGet/category/0000.json -e "folder" -m 1 | awk -F '"' '{print $4"/"}' | sed -e 's/\\//g')
 
 
 while getopts "u:f:r:h" opt; do
@@ -144,8 +144,6 @@ while getopts "u:f:r:h" opt; do
 done
 
 #for backwards compatibility
-
-echo "$@" > /home/steven/1.1
 
 if [ -z "$URL" ];then
     URL="$1"
